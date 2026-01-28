@@ -111,12 +111,16 @@ body {
   --muted: #6b7280;        /* muted text */
   --bg: #f6f7fb;           /* page background */
   --card: #ffffff;         /* card/background surfaces */
+
+  --brand: #2563eb;
+  --brand-dark: #1d4ed8;
 }
 
 .site-header,
 .site-footer {
   text-align: center;
   padding: 1.25rem;
+  background: var(--card);
 }
 
 .container {
@@ -141,6 +145,11 @@ body {
 .toolbar {
   padding: 0.5rem;
   border: 1px dashed rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .position-stage {
@@ -164,6 +173,10 @@ body {
   text-decoration: none;
   color: var(--brand);
   font-weight: 600;
+}
+
+.cta-link:hover {
+  text-decoration: underline;
 }
 
 .box {
@@ -193,24 +206,6 @@ body {
 .b3 {
   background: rgba(245, 158, 11, 0.12);
   border-color: rgba(245, 158, 11, 0.55);
-}
-
-.relative-box {
-  position: relative;
-  top: 10px;
-  left: 10px;
-  padding: 0.5rem 0.75rem;
-  border-radius: 10px;
-  background: rgba(37, 99, 235, 0.12);
-  margin-bottom: 0.75rem;
-}
-
-.absolute-parent {
-  position: relative;
-  padding: 1rem;
-  border-radius: 12px;
-  background: rgba(34, 197, 94, 0.12);
-  margin-top: 0.5rem;
 }
 
 .relative-box {
